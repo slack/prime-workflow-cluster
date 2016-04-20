@@ -1,0 +1,24 @@
+apiVersion: extensions/v1beta1
+kind: DaemonSet
+metadata:
+  name: prime-workflow-cluster
+  namespace: deis
+spec:
+  selector:
+    matchLabels:
+      app: prime-workflow-cluster
+      version: v1
+  template:
+    metadata:
+      name: prime-workflow-cluster
+      labels:
+        app: prime-workflow-cluster
+        version: v1
+    spec:
+      containers:
+      - name: slugrunner
+        image: quay.io/deis/slugrunner:v2.0.0-beta2
+        imagePullPolicy: IfNotPresent
+      - name: slugbuilder
+        image: quay.io/deis/slugbuilder:v2.0.0-beta2
+        imagePullPolicy: IfNotPresent
