@@ -17,8 +17,8 @@ spec:
     spec:
       containers:
       - name: slugrunner
-        image: quay.io/deis/slugrunner:v2.3.1
+        image: quay.io/deis/slugrunner:v2.2.1
         imagePullPolicy: IfNotPresent
       - name: slugbuilder
-        image: quay.io/deis/slugbuilder:v2.3.1
+        image: quay.io/deis/slugbuilder:v2.4.1
         imagePullPolicy: IfNotPresent
