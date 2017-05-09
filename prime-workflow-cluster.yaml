@@ -20,8 +20,8 @@ spec:
         image: quay.io/deis/slugrunner:v2.3.0
         imagePullPolicy: IfNotPresent
       - name: slugbuilder
-        image: quay.io/deis/slugbuilder:v2.4.10
+        image: quay.io/deis/slugbuilder:v2.4.12
         imagePullPolicy: IfNotPresent
       - name: dockerbuilder
-        image: quay.io/deis/dockerbuilder:v2.7.1
+        image: quay.io/deis/dockerbuilder:v2.7.2
         imagePullPolicy: IfNotPresent
